@@ -1,0 +1,29 @@
+.question {
+    font-size: 30px;
+    flex: 0 0 auto;
+    margin: 15px;
+}
+
+.questionBox {
+    margin: 20px;
+}
+
+.option {
+    margin: 20px;
+    margin-right: 5px;
+    transition: background-color 0.4s ease;
+}
+
+.table-custom-dark {
+  --bs-table-bg: #4b4b4b;
+  --bs-table-color: #ffffff;
+  --bs-table-striped-bg: #6a6a6a;
+  --bs-table-striped-color: #6d6d6d;
+  --bs-table-hover-bg: #d8d8d8;
+  --bs-table-border-color: #000000;
+}
+
+.custom-link {
+    color: white;
+    text-decoration: none;
+}
