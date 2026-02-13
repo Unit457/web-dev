@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <div class="mb-3">
+        <p>Cash: {{ cash | usd }}</p>
+        <p>Total: {{ total_cash | usd }}</p>
+    </div>
+    <div class="mb-3">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <td>Date</td>
+                    <td>Action</td>
+                    <td>Stock symbol</td>
+                    <td>Price</td>
+                    <td>Shares</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for transaction in transactions %}
+                    <tr>
+                        <td>{{ transaction.date }}</td>
+                        <td>{{ transaction.action }}</td>
+                        <td>{{ transaction.symbol }}</td>
+                        <td>{{ transaction.price | usd}}</td>
+                        <td>{{ transaction.shares }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

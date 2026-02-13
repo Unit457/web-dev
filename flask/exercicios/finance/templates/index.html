@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <div class="mb-3">
+        <p>Cash: {{ cash | usd }}</p>
+        <p>Total: {{ total_cash | usd }}</p>
+    </div>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <td>Symbol</td>
+                <td>Price</td>
+                <td>Shares</td>
+                <td>Holding's value</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.price | usd }}</td>
+                    <td>{{ stock.shares }}</td>
+                    <td>{{ stock.holding | usd}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

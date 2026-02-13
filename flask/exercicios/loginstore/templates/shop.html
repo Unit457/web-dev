@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    {% if name %}
+
+        Welcome, {{ name }}. <a href="/logout">Log out.</a>
+        <br>
+        <h1>Books</h1>
+        <ol>
+            {% for book in books %}
+                <li>{{ book.title }}</li>
+                <form action="/cart" method="post">
+                    <input name="id" type="hidden" value="{{ book.id }}">
+                    <button name="cartaction" value="add" type="submit">Add to cart</button>
+                </form>
+            {% endfor %}
+        </ol>
+
+    {% else %}
+
+        You are not logged in. <a href="/login">Log in.</a>
+
+    {% endif %}
+
+{% endblock %}
