@@ -6,4 +6,5 @@ scppage é uma página sobre um interesse pessoal meu, a Fundação SCP (acredit
 quizpage é um template de quiz simples facilmente expandível (projetei de forma que facilita a adição de novas perguntas e respostas)
 
 Esse projeto me ajudou a expandir meus conhecimentos em CSS (classes, animações), HTML (organização, como utilização de divs e span) e JavaScript (eventListeners, querySelector, animações integradas a CSS) bem como colocar em prática o que eu já sabia fazer.
-É uma implementação de front-end simples que me ajudou a entender algumas coisas sobre o front. 
+É uma implementação de front-end simples que me ajudou a entender algumas coisas sobre essa área.
+
