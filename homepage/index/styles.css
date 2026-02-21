@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.hr {
+    height: 1px;
+    background-color: white;
+    margin: 10px 0;
+  }
+
+.anim-container {
+    text-align: center;
+    overflow: hidden;
+}
+
+.websiteHeadContent {
+    display: inline-block;
+    color: rgb(255,255,255);
+    font-family: "Poiret One", sans-serif;
+    font-size: 55px;
+}
+
+.websiteBodyContent {
+    display: inline-block;
+    color: rgb(255,255,255);
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+.subtitleContent {
+    display: inline-block;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 40px;
+    color: rgb(255,255,255);
+}
+
+.mask {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.transformAbove {
+    display: inline-block;
+    transform: translateY(-100%);
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.transformLeft {
+    display: inline-block;
+    transform: translateX(-100%);
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.transformRight {
+    display: inline-block;
+    transform: translateX(100%);
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.transformBelow {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.yReset {
+    transform: translateY(0%);
+}
+
+.xReset {
+    transform: translateX(0%);
+}
+
+.table-custom-dark {
+  --bs-table-bg: #1F1F1F;
+  --bs-table-color: #ffffff;
+  --bs-table-striped-bg: #0F0F0F;
+  --bs-table-striped-color: #ffffff;
+  --bs-table-hover-bg: #0f3b6d;
+  --bs-table-border-color: #1c4b7a;
+}

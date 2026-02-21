@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(0,0,0);
+    font-family: "Oxanium", sans-serif;
+    margin: 22px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+p {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.title {
+    font-size: 60px;
+    font-family: "Iceland", sans-serif;
+}
+
+.scpmotto {
+    font-size: 35px;
+    text-align: center;
+    font-family: "Tektur", sans-serif;
+}
+
+.topictext {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.topic {
+    font-size: 25px;
+}
+
+.bottomText {
+    font-size: 18px;
+}
+
+.table-custom-dark {
+  --bs-table-bg: #1F1F1F;
+  --bs-table-color: #ffffff;
+  --bs-table-striped-bg: #0F0F0F;
+  --bs-table-striped-color: #ffffff;
+  --bs-table-hover-bg: #0f3b6d;
+  --bs-table-border-color: #1c4b7a;
+}
+
+.anim-container {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.anim {
+    opacity: 1;
+    transform: translateY(0%);
+}

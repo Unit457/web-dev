@@ -1,0 +1,103 @@
+body {
+    background-color: #1b1b1b;
+    margin: 20px;
+    transition: background-color 0.4s ease;
+}
+
+.hr {
+    height: 1px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.anim-container {
+    text-align: center;
+    overflow: hidden;
+}
+
+.mask {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.transformLeft {
+    display: inline-block;
+    transform: translateX(-100%);
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.transformRight {
+    display: inline-block;
+    transform: translateX(100%);
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.transformBelow {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.yReset {
+    transform: translateY(0%);
+}
+
+.xReset {
+    transform: translateX(0%);
+}
+
+.websiteHeadContent {
+    display: inline-block;
+    color: rgb(255,255,255);
+    font-family: "Saira", sans-serif;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.websiteBodyContent {
+    color: rgb(255,255,255);
+    font-family: "Noto Serif", serif;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.topCornerRightElements {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.topCornerLeftElements {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-dark {
+    --bs-btn-bg: rgb(0,0,0);
+    --bs-btn-border-color: rgb(111, 66, 193);
+
+    --bs-btn-hover-bg: rgb(111, 66, 193);
+    --bs-btn-hover-border-color: rgb(111, 66, 193);
+
+    --bs-btn-active-bg: rgb(124, 78, 230);
+    --bs-btn-active-border-color: rgb(124, 78, 230);
+
+    --bs-btn-border-width: 3px
+}
+
+.table-custom-dark {
+  --bs-table-bg: #1F1F1F;
+  --bs-table-color: #ffffff;
+  --bs-table-striped-bg: #0F0F0F;
+  --bs-table-striped-color: #ffffff;
+  --bs-table-hover-bg: #0f3b6d;
+  --bs-table-border-color: #1c4b7a;
+}
